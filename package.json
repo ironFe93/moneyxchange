@@ -1,0 +1,25 @@
+{
+  "name": "moneyxchange",
+  "version": "1.0.0",
+  "description": "converts USD to EUR",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironFe93/moneyxchange.git"
+  },
+  "author": "otarola.christos@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ironFe93/moneyxchange/issues"
+  },
+  "homepage": "https://github.com/ironFe93/moneyxchange#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}
