@@ -33,7 +33,7 @@ const readUSDRate = async () => {
 const persistInterval = async () => {
     console.log('initial persist...');
     console.log(await persistRate());
-    const interval = 30000;
+    const interval = 600000;
     console.log('setting interval to ' + interval + ' ms');
     await setInterval(persistRate, interval);
 }
