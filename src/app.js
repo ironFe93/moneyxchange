@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+require('./modules/mongoose');
+require('./services/currency_service').persistInterval();
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,7 +17,7 @@ app.get('*', (req, res) => {
 app.use((err, req, res, next) => {
     console.error(err);
     res
-        .status(err.status || 500)
+        .status(500)
         .send({
             error: 'An error occured',
             message: err.message
